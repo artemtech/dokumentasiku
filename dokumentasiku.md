@@ -50,7 +50,26 @@ H. SETTING UP DOCKER WITH FORWARDED IP
   a. keluar lingkungan docker  
   b. commit pakai: `docker commit -m "pesan komit" -a "nama author" sha_container nama_image`  
   c. jalankan kembali image tadi pakai `docker run -itp porthost:portdocker --privileged image:tag`
-    
+    17284,17285
 I. CARI NAMA PAKET YG MEMILIKI FILE.INI
   1. debian: `dpkg -S namafile`
   2. arch: `pacman -Qo namafile`
+
+J. SETTING MARIADB - gak bisa masuk mesti pakai sudo myqsl:  
+  1. `sudo mysql_secure_installation`  
+  2. `sudo mysql`  
+  3. `UPDATE mysql.user SET plugin = 'mysql_native_password' WHERE user = 'root' AND plugin = 'unix_socket'; FLUSH PRIVILEGES;`
+  4. `exit`
+  5. silakan login kembali, sekarang pakai password ya!
+ 
+K. SETTING VHOST UNTUK APACHE -> DOCKER
+  ```
+  <VirtualHost *:80>
+    ServerName namadnsserver
+    <Proxy *>
+      Allow from localhost
+    </Proxy>
+    # http
+    ProxyPass / http://localhost:8000/
+  </VirtualHost>
+  ```
