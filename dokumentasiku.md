@@ -1,4 +1,4 @@
-#Dokumentasiku 
+# Dokumentasiku 
 
 A. error ICCP incorrect sRGB profile [godot]:
   1. buka assets
