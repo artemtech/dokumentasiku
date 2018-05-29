@@ -15,7 +15,9 @@ D. Virtualbox efi shell
   $ cd /mnt
   $ sudo sh -c "echo '\EFI\ubuntu\grubx64.efi' > startup.nsh"
 
-E. dpkg-query -L namapaket
+E. CARI DAFTAR FILES YG DIMILIKI PAKET DI DEBIAN
+  `dpkg -L namapaket`
+
 F. RE-BUILD ISO BLANKON
 ```ISOOPT="-v -A BlankOnCDFactory -p BlankOn -publisher BlankOn -V blankon"
 ISOOPT="$ISOOPT -no-emul-boot -boot-load-size 4 -boot-info-table"
