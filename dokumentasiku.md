@@ -2,21 +2,22 @@ A. error ICCP incorrect sRGB profile [godot]:
   1. buka assets
   2. buka terminal
   3. ketik:
-  find . -name '*.png' -exec mogrify {} \;
+  `find . -name '*.png' -exec mogrify {} \;`
 
 B. dd-ing images
-  dd bs=4M if=/path/to/archlinux.iso of=/dev/sdx status=progress oflag=sync
+  `dd bs=4M if=/path/to/archlinux.iso of=/dev/sdx status=progress oflag=sync`
 
 C. restoring dd-ed storage
-  wipefs --all /dev/sdx
+  `wipefs --all /dev/sdx`
   
 D. Virtualbox efi shell
   $ sudo mount /dev/sda1 /mnt
   $ cd /mnt
   $ sudo sh -c "echo '\EFI\ubuntu\grubx64.efi' > startup.nsh"
 
-E. CARI DAFTAR FILES YG DIMILIKI PAKET DI DEBIAN
-  `dpkg -L namapaket`
+E. CARI DAFTAR FILES YG DIMILIKI PAKET
+  1. debian: `dpkg -L namapaket`
+  2. arch: `pacman -Ql namapaket`
 
 F. RE-BUILD ISO BLANKON
 ```ISOOPT="-v -A BlankOnCDFactory -p BlankOn -publisher BlankOn -V blankon"
@@ -43,3 +44,7 @@ H. SETTING UP DOCKER WITH FORWARDED IP
     a. keluar lingkungan docker
     b. commit pakai: `docker commit -m "pesan komit" -a "nama author" sha_container nama_image`
     c. jalankan kembali image tadi pakai `docker run -itp porthost:portdocker --privileged image:tag`
+    
+I. CARI NAMA PAKET YG MEMILIKI FILE.INI
+  1. debian: `dpkg -S namafile`
+  2. arch: `pacman -Qo namafile`
