@@ -49,8 +49,8 @@ H. SETTING UP DOCKER WITH FORWARDED IP
   2. kalau sudah siap, tapi ada error `"run docker with --privileged"`  
   a. keluar lingkungan docker  
   b. commit pakai: `docker commit -m "pesan komit" -a "nama author" sha_container nama_image`  
-  c. jalankan kembali image tadi pakai `docker run -itp porthost:portdocker --privileged image:tag`  
-    17284,17285  
+  c. jalankan kembali image tadi pakai `docker run -itp porthost:portdocker --privileged image:tag` 17284,17285
+
 I. CARI NAMA PAKET YG MEMILIKI FILE.INI
   1. debian: `dpkg -S namafile`
   2. arch: `pacman -Qo namafile`
