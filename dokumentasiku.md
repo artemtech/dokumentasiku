@@ -49,8 +49,8 @@ H. SETTING UP DOCKER WITH FORWARDED IP
   2. kalau sudah siap, tapi ada error `"run docker with --privileged"`  
   a. keluar lingkungan docker  
   b. commit pakai: `docker commit -m "pesan komit" -a "nama author" sha_container nama_image`  
-  c. jalankan kembali image tadi pakai `docker run -itp porthost:portdocker --privileged image:tag`
-    17284,17285
+  c. jalankan kembali image tadi pakai `docker run -itp porthost:portdocker --privileged image:tag`  
+    17284,17285  
 I. CARI NAMA PAKET YG MEMILIKI FILE.INI
   1. debian: `dpkg -S namafile`
   2. arch: `pacman -Qo namafile`
@@ -72,4 +72,17 @@ K. SETTING VHOST UNTUK APACHE -> DOCKER
     # http
     ProxyPass / http://localhost:8000/
   </VirtualHost>
+  ```
+L. CODEIGNITER SESSION DIR ERROR (MKDIR())
+  ```
+  application/config/config.php
+  $config['sess_save_path'] = sys_get_temp_dir();
+  ```
+M. GIT STASH - SIMPAN PERUBAHAN TANPA COMMIT  
+  1. membuat stash: `git stash create "pesan WIP"`
+  2. lihat semua stash: `git stash list`
+  3. mengembalikan pekerjaan WIP ke area kerja:  
+  `git stash apply --index nomorindex`
+  4. hapus stash:  
+  `git stash drop nomorindex`
   ```
