@@ -86,3 +86,8 @@ M. GIT STASH - SIMPAN PERUBAHAN TANPA COMMIT
   4. hapus stash:  
   `git stash drop nomorindex`
   ```
+  
+N. How to use Screen
+`screen -S "kasih judul"` untuk buat baru
+tekan `Ctrl + A` lalu `D` untuk detach
+`screen -R` untuk reattach
