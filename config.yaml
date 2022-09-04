@@ -1,9 +1,7 @@
-baseURL: https://artemtech.github.io/dokumentasiku
-languageCode: id-ID
+# baseURL: https://artemtech.github.io/dokumentasiku
+baseURL: http://localhost:1313
+languageCode: en-US
 title: Dokumentasi Artemtech
-description: |
-  Laman ini merupakan dokumentasi keseharian terkait hasil ngoprek dan 
-  sidik gangguan atas permasalahan yang saya alami.
 theme: cactus
 disqusShortname: artemtech
 
@@ -20,7 +18,9 @@ menu:
     weight: 4
 
 params:
+  description: Laman ini merupakan dokumentasi keseharian terkait hasil ngoprek dan sidik gangguan atas permasalahan yang saya alami.
   colortheme: light
   mainSection: posts
+  mainSectionTitle: Postingan
   comments:
     engine: disqus  
