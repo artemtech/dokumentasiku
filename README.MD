@@ -1,1 +1,0 @@
-./dokumentasiku.md
