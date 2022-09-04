@@ -1,5 +1,5 @@
 baseURL: https://artemtech.github.io/dokumentasiku
-# baseURL: http://localhost:1313
+# baseURL: http://localhost:1313/dokumentasiku
 languageCode: en-US
 title: Dokumentasi Artemtech
 theme: cactus
