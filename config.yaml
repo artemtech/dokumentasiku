@@ -3,7 +3,7 @@ baseURL: https://artemtech.github.io/dokumentasiku
 languageCode: en-US
 title: Dokumentasi Artemtech
 theme: cactus
-disqusShortname: artemtech
+disqusShortname: gh-artemtech-dokumentasiku
 
 menu:
   main:
