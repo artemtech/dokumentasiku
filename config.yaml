@@ -1,0 +1,26 @@
+baseURL: http://localhost:1313
+languageCode: id-ID
+title: Dokumentasi Artemtech
+description: |
+  Laman ini merupakan dokumentasi keseharian terkait hasil ngoprek dan 
+  sidik gangguan atas permasalahan yang saya alami.
+theme: cactus
+disqusShortname: artemtech
+
+menu:
+  main:
+  - name: home
+    url: /
+    weight: 1
+  - name: legacy-blog
+    url: https://artemtechblog.wordpress.com
+    weight: 3
+  - name: tentang
+    url: /about
+    weight: 4
+
+params:
+  colortheme: light
+  mainSection: posts
+  comments:
+    engine: disqus  
