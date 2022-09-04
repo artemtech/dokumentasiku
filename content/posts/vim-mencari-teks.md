@@ -1,6 +1,12 @@
 ---
 title: "Vim Mencari Teks"
 date: 2020-12-03T15:22:38+07:00
+categories:
+  - editor
+tags:
+  - vim
+  - teks editor
+  - search
 ---
 
 Berikut cara mudah melakukan navigasi sederhana di 

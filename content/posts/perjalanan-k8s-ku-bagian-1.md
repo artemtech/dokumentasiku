@@ -1,6 +1,12 @@
 ---
 title: "Perjalanan K8s Ku (bagian 1)"
 date: 2022-09-04T22:33:39+07:00
+catogories:
+  - kubernetes
+tags:
+  - kubernetes
+  - k8s
+  - kubectl
 ---
 
 Ah, kubernetes, akhirnya...  
