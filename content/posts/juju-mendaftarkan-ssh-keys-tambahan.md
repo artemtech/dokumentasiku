@@ -17,8 +17,10 @@ juju add-ssh-key -m NAMA_MODEL "PASTE SSH KEY DISINI"
 
 Setelah itu, coba lakukan ssh dengan pasangan kunci privat yang barusan telah didaftarkan kunci publiknya.
 
-**notes**
+**Notes:**
 - Mengapa kita gunakan -m NAMA_MODEL ? ya, karena setiap model memiliki entri ssh-keys yang berbeda, jika tidak mencantumkan -m NAMA_MODEL,
   maka secara otomatis Juju akan menambahkan kunci publik ssh itu ke dalam model yang saat ini sedang aktif.
+- Setelah menjalankan perintah di atas, juju akan otomatis menambahkan tambahan ssh-key tadi ke semua unit (bahkan ke unit / mesin yang
+  sudah berjalan)
 
 Selamat mencoba !
