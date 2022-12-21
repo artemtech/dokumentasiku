@@ -12,7 +12,7 @@ Yang kita tahu, setelan bawaan Juju ketika pertama kali dipasang, akan membuat 1
 dan juga kunci default user saat ini. Kunci inilah yang nantinya akan didaftarkan pada mesin-mesin atau unit-unit aplikasi pada berkas `.ssh/authorized_keys`.
 Untuk mendaftarkan kunci lain yang biasa digunakan, kita bisa menggunakan perintah berikut:
 ```bash
-juju add-ssh-key -m NAMA_MODEL "PASTE SSH KEY DISINI"
+juju add-ssh-key -m NAMA_MODEL "PASTE SSH.PUB DISINI"
 ```
 
 Setelah itu, coba lakukan ssh dengan pasangan kunci privat yang barusan telah didaftarkan kunci publiknya.
